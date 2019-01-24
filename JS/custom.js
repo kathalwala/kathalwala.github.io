@@ -29,7 +29,19 @@ $(function () {
         autoplay: true,
         smartSpeed: 700,
         loop: true,
-        autoplayHoverPause: true
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            480: {
+                items: 2
+            },
+            768: {
+                items: 3
+            }
+        }
+
 
     });
 });
@@ -42,7 +54,6 @@ $(function () {
         smartSpeed: 700,
         loop: true,
         autoplayHoverPause: true
-
     });
 });
 
@@ -86,4 +97,10 @@ $(function () {
     });
 
 
+});
+//close nav-bar on click
+$(function () {
+    $(".navbar-collapse ul li a").on("click touch", function () {
+        $(".navbar-toggle").click();
+    });
 });
