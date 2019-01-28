@@ -656,10 +656,13 @@ Footer section
 /**************************************************************
 navigation section
 **************************************************************/
-
+.nav{
+    
+}
 .navbar {
     padding: 20px 0;
     transition: all .5s ease-in-out;
+    
 }
 
 .navbar-top-custom {
